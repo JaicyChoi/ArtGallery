@@ -1,4 +1,3 @@
-const menu_list_li_a = document.querySelectorAll('.menu_list>li>a');
 const welcome = document.querySelector('.welcome');
 const intro_message = document.querySelector('.intro_message');
 const main_view = document.querySelector('.main_view');
@@ -11,8 +10,6 @@ setTimeout(() => main_view_list_li[0].classList.add('show'), 5000);
 setTimeout(() => main_view_list_li[1].classList.add('show'), 5500);
 setTimeout(() => main_view_list_li[2].classList.add('show'), 6000);
 setTimeout(() => main_view_list_li[3].classList.add('show'), 6500);
-
-menu_list_li_a[0].classList.add('menu_selected');
 
 main_view_list_li[0].addEventListener('mouseenter', () => {
     main_view.classList.add('inven');
