@@ -2,6 +2,9 @@ body{
     height: 100vh;
     overflow: scroll;
 }
+body.lock{
+    overflow: hidden;
+}
 body::-webkit-scrollbar{
     display: none;
 }
@@ -25,7 +28,7 @@ body::-webkit-scrollbar{
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 15px;
+    gap: 18px;
     grid-auto-flow: dense;
 }
 .wrapper>li{
@@ -34,6 +37,10 @@ body::-webkit-scrollbar{
     cursor: pointer;
     background: white;
     transition: all .3s linear;
+}
+.wrapper>li:hover{
+    transform: translate(-3px, -3px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, .3), 0 0 10px rgba(255, 255, 255, .3), 0 0 5px rgba(255, 255, 255, .3), 7px 7px 5px rgba(0, 0, 0, 7);
 }
 .img_wrppaer{
     position: relative;
@@ -72,6 +79,9 @@ body::-webkit-scrollbar{
 .hover_info_wrapper.hover{
     opacity: 1;
 }
+.hover_info_wrapper.hover2{
+    opacity: 1;
+}
 .hover_info{
     position: relative;
     top: 50%;
@@ -87,4 +97,48 @@ body::-webkit-scrollbar{
     position: relative;
     width: 100%;
     font-size: 1.125em;
+}
+.show_bg{
+}
+.show_bg.show{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .75);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
+.show_pic_wrap{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 900px;
+}
+.show_pic_wrap img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    max-width: 100%;
+    max-height: 80vh;
+    box-shadow: 0 0 30px rgba(255, 255, 255, .35), 0 0 25px rgba(255, 255, 255, .5), 0 0 15px rgba(255, 255, 255, .65), 0 0 7px rgba(255, 255, 255, .75), 0 0 3px rgba(255, 255, 255, .85), 20px 20px 7px rgba(0, 0, 0, .7);
+}
+.show_pic_info_wrap{
+    position: relative;
+/*     max-width: 100%; */
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: white;
+    margin-top: 12px;
+    font-size: 1em;
+    text-align: center;
+}
+.show_pic_info_date{
+    position: relative;
+    margin-bottom: 5px;
+}
+.show_pic_info_nickname{
+    position: relative;
 }

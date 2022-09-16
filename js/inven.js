@@ -33,8 +33,10 @@ for( let i = 0 ; i < DATA.INVEN.length ; i++ ){
 const wrapper_li = document.querySelectorAll('.wrapper>li');
 const hover_info_wrapper = document.querySelectorAll('.hover_info_wrapper');
 const wrapper_img = document.querySelectorAll('.img_wrppaer>img');
+const show_bg = document.querySelector('.show_bg');
+const body = document.querySelector('body');
 
-menu_list_li_a[1].classList.add('menu_selected');
+// menu_list_li_a[1].classList.add('menu_selected');
 wrapper_li.forEach( (li, index) => li.addEventListener('mouseenter', () => {
     hover_info_wrapper[index].classList.add('hover');
     wrapper_img[index].classList.add('hover');
@@ -43,4 +45,38 @@ wrapper_li.forEach( (li, index) => li.addEventListener('mouseleave', () => {
     hover_info_wrapper[index].classList.remove('hover');
     wrapper_img[index].classList.remove('hover');
 }));
+wrapper_li.forEach( (li, index) => li.addEventListener('click', () => {
+    hover_info_wrapper[index].classList.add('hover2');
 
+    let show_pic_wrap = document.createElement('div');
+    let img = document.createElement('img');
+    let show_pic_info_wrap = document.createElement('div');
+    let show_pic_info_date = document.createElement('p');
+    let show_pic_info_nickname = document.createElement('p');
+
+    show_pic_wrap.classList.add('show_pic_wrap');
+    show_pic_info_wrap.classList.add('show_pic_info_wrap');
+    show_pic_info_date.classList.add('show_pic_info_date');
+    show_pic_info_nickname.classList.add('show_pic_info_nickname');
+    body.classList.add('lock');
+    show_bg.classList.add('show');
+
+    img.src = 'img/inven/' + DATA.INVEN[index].file + '.jpg';
+    img.alt = 'inven ' + DATA.INVEN[index].nickname + '님 그림';
+    show_pic_info_date.innerHTML = DATA.INVEN[index].date;
+    show_pic_info_nickname.innerHTML = DATA.INVEN[index].nickname + '@Inven';
+
+    show_pic_info_wrap.appendChild(show_pic_info_date);
+    show_pic_info_wrap.appendChild(show_pic_info_nickname);
+    show_pic_wrap.appendChild(img);
+    show_pic_wrap.appendChild(show_pic_info_wrap);
+    show_bg.appendChild(show_pic_wrap);
+}));
+show_bg.addEventListener('click', () => {
+    const show_pic_wrap = document.querySelector('.show_pic_wrap');
+    show_bg.removeChild(show_pic_wrap);
+    for( let i = 0 ; i <  DATA.INVEN.length; i++ )
+        hover_info_wrapper[i].classList.remove('hover2');
+    show_bg.classList.remove('show');
+    body.classList.remove('lock');
+});
