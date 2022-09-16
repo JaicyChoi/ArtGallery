@@ -1,4 +1,5 @@
 body{
+    height: 100vh;
     overflow: scroll;
 }
 body::-webkit-scrollbar{
@@ -8,8 +9,8 @@ body::-webkit-scrollbar{
     position: relative;
     float: right;
     width: calc(100% - 410px);
-    height: 100vh;
-    background: #271A1B;
+    background: #2C191A;
+    min-height: 100vh;
 }
 .img_list_wrapper{
     position: relative;
@@ -18,28 +19,72 @@ body::-webkit-scrollbar{
     left: 50%;
     transform: translateX(-50%);
     margin-top: 30px;
-    background: blue;
+    margin-bottom: 50px;
 }
 .wrapper{
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 15px;
     grid-auto-flow: dense;
 }
 .wrapper>li{
+    position: relative;
     overflow: hidden;
-    background: green;
-}
-.wrapper>li.landscape{
-    grid-column-end: span 2;
+    cursor: pointer;
+    background: white;
+    transition: all .3s linear;
 }
 .img_wrppaer{
-    width: 100px;
-    height: 50px;
+    position: relative;
+    max-height: 500px;
     overflow: hidden;
 }
-.wrapper>li>img{
-/*     width: 100%; */
+.img_wrppaer>img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;
+    height: 100%;
+    min-width: 100%;
+    display: block;
+    overflow: hidden;
+    transition: all .25s ease-in-out;
+}
+.img_wrppaer>img.hover{
+    width: 157%;
+}
+.hover_info_wrapper{
+    position: absolute;
+    background-color: rgb(29 0 0 / 75%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    transition: all .3s linear;
+    opacity: 0;
     display: block;
 }
-      
+.hover_info_wrapper.hover{
+    opacity: 1;
+}
+.hover_info{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hover_info_date{
+    position: relative;
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.hover_info_nickname{
+    position: relative;
+    width: 100%;
+    font-size: 1.125em;
+}

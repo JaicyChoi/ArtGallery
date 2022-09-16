@@ -17,6 +17,7 @@ body{
     width: 410px;
     background-color: black;
     z-index: 1;
+    box-shadow: 0px 0px 20px rgba(255, 118, 124, .15), 0px 0px 15px rgba(255, 118, 124, .3), 0px 0px 10px rgba(255, 118, 124, .35);
 }
 .profile_wrapper{
     position: relative;
@@ -137,7 +138,7 @@ body{
     transition: all .3s ease-in-out;
 }
 .main_view.inven{
-    background: url(../img/inven/20220330.png) no-repeat center;
+    background: url(../img/inven/20220330.jpg) no-repeat center;
     background-size: cover;
 }
 .main_view.sns_view{
