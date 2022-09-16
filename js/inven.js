@@ -1,5 +1,5 @@
-const menu_list_li_a = document.querySelectorAll('.menu_list>li>a');
 const wrapper = document.querySelector('.wrapper');
+let pageStat = 'inven';
 
 for( let i = 0 ; i < DATA.INVEN.length ; i++ ){
     let li = document.createElement('li');
@@ -30,7 +30,6 @@ for( let i = 0 ; i < DATA.INVEN.length ; i++ ){
     wrapper.append(li);
 }
 
-menu_list_li_a[1].classList.add('menu_selected');
 const wrapper_li = document.querySelectorAll('.wrapper>li');
 const hover_info_wrapper = document.querySelectorAll('.hover_info_wrapper');
 const wrapper_img = document.querySelectorAll('.img_wrppaer>img');

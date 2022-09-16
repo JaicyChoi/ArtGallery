@@ -27,4 +27,9 @@ function includeHTML() {
 }
 window.addEventListener('DOMContentLoaded',()=>{
     includeHTML();
+    const menu_list_li_a = document.querySelectorAll('.menu_list>li>a');
+    
+    if( pageStat === 'inven' ){
+        menu_list_li_a[1].classList.add('menu_selected');
+    }
 });
