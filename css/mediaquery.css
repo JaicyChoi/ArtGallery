@@ -324,6 +324,22 @@
     }
 }
 @media screen and (max-width:450px){
+    .menu{
+        width: 250px;
+    }
+    .profile_wrapper{
+        margin-top: 95px;
+    }
+    .profile_img_wrapper{
+        width: 150px;
+        height: 150px;
+    }
+    .menu_list_wrapper{
+        margin-top: 80px;
+    }
+    .menu_list, .sns_list{
+        margin-left: 62px;
+    }
     .intro{
         margin-bottom: 90px;
     }
@@ -351,6 +367,13 @@
     }
 }
 @media screen and (max-width:400px){
+    .profile_wrapper{
+        margin-top: 80px;
+    }
+    .profile_img_wrapper{
+        width: 145px;
+        height: 145px;
+    }
     .intro{
         margin-bottom: 85px;
     }
@@ -373,6 +396,9 @@
     }
 }
 @media screen and (max-width:360px){
+    .profile_wrapper{
+        margin-top: 90px;
+    }
     .img_list_wrapper{
         width: 93%;
     }

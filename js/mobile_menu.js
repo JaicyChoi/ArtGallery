@@ -7,16 +7,19 @@ mobile_icon.addEventListener('click', () => {
     mobile_icon.classList.add('hide');
     mobile_arrow.classList.add('show');
     show_bg.classList.add('show_menu');
+    body.classList.add('lock');
 });
 mobile_arrow.addEventListener('click', () => {
     menu.classList.remove('show');
     mobile_icon.classList.remove('hide');
     mobile_arrow.classList.remove('show');
     show_bg.classList.remove('show_menu');
+    body.classList.remove('lock');
 });
 show_bg.addEventListener('click', () => {
     menu.classList.remove('show');
     mobile_icon.classList.remove('hide');
     mobile_arrow.classList.remove('show');
     show_bg.classList.remove('show_menu');
+    body.classList.remove('lock');
 });

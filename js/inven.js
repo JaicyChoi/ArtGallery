@@ -79,3 +79,7 @@ show_bg.addEventListener('click', () => {
     show_bg.classList.remove('show');
     body.classList.remove('lock');
 });
+
+if( window.innerHeight < 860 ){
+    
+}
