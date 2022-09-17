@@ -4,8 +4,8 @@ const main_view = document.querySelector('.main_view');
 const main_view_list = document.querySelector('.main_view_list');
 const main_view_list_li = document.querySelectorAll('.main_view_list>li');
 
-// const menu_list_li_a = document.querySelectorAll('.menu_list>li>a');
-// menu_list_li_a[0].classList.add('menu_selected');
+const menu_list_li_a = document.querySelectorAll('.menu_list>li>a');
+menu_list_li_a[0].classList.add('menu_selected');
 
 setTimeout(() => welcome.classList.add('fill'), 4000);
 setTimeout(() => intro_message.classList.add('show'), 4200);
