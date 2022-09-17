@@ -34,7 +34,7 @@ body::-webkit-scrollbar{
 .wrapper>li{
     position: relative;
     overflow: hidden;
-    cursor: pointer;
+/*     cursor: pointer; */
     background: rgba(255, 255, 255, .5);
     transition: all .3s linear;
     border: 1px solid rgba(225, 225, 225, 0.35);
@@ -116,7 +116,7 @@ body::-webkit-scrollbar{
     position: relative;
     width: 42px;
     height: 42px;
-    cursor: pointer;
+/*     cursor: pointer; */
 }
 .top_btn:after{
     content: '';
