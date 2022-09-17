@@ -9,6 +9,7 @@ body{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    min-width: 360px;
 }
 .menu{
     position: fixed;
@@ -130,6 +131,75 @@ body{
     color: white;
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 0.75em;
+}
+.mobile_menu_wrap{
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    display: none;
+}
+.mobile_icon{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.mobile_icon.hide{
+    display: none;
+}
+.mobile_icon:after{
+    content: '';
+    background: rgba(255, 118, 124, .5);
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: -9px;
+    left: -9px;
+    z-index: -1;
+    border-radius: 50%;
+    transition: all .3s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .35), 0 0 5px rgba(255, 2558, 255, .5);
+}
+.mobile_icon:hover:after{
+    background: rgba(255, 255, 255, .75);
+    box-shadow: 0 0 15px rgba(255, 118, 124, .5), 0 0 10px rgba(255, 118, 124, .35), 0 0 5px rgba(255, 118, 124, .5);
+}
+.mobile_icon img{
+    width: 100%;
+    display: block;
+}
+.mobile_arrow{
+    position: absolute;
+    top: -8px;
+    left: -9px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+}
+.mobile_arrow.show{
+    display: block;
+}
+.mobile_arrow:after{
+    content: '';
+    background: rgba(255, 118, 124, .5);
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: -2px;
+    left: 0px;
+    z-index: -1;
+    border-radius: 50%;
+    transition: all .3s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .35), 0 0 5px rgba(255, 2558, 255, .5);
+}
+.mobile_arrow:hover:after{
+    background: rgba(255, 255, 255, .75);
+    box-shadow: 0 0 15px rgba(255, 118, 124, .5), 0 0 10px rgba(255, 118, 124, .35), 0 0 5px rgba(255, 118, 124, .5);
+}
+.mobile_arrow img{
+    width: 100%;
+    display: block;
 }
 .main_view{
     position: relative;
