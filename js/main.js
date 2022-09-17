@@ -9,7 +9,7 @@ menu_list_li_a[0].classList.add('menu_selected');
 
 setTimeout(() => welcome.classList.add('fill'), 4000);
 setTimeout(() => intro_message.classList.add('show'), 4200);
-setTimeout(() => main_view_list.classList.add('show'), 4500);
+setTimeout(() => main_view_list.classList.add('show'), 4800);
 setTimeout(() => main_view_list_li[0].classList.add('show'), 5000);
 setTimeout(() => main_view_list_li[1].classList.add('show'), 5500);
 setTimeout(() => main_view_list_li[2].classList.add('show'), 6000);
