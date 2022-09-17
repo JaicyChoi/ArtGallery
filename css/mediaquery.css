@@ -326,6 +326,7 @@
 @media screen and (max-width:450px){
     .menu{
         width: 250px;
+        transform: translateX(-250px);
     }
     .profile_wrapper{
         margin-top: 95px;
