@@ -74,6 +74,9 @@ body{
 .menu_list>li>a.menu_selected{
     color: #FF767C;
 }
+.submenu_list>li>a.menu_selected{
+    color: #FF767C;
+}
 .submenu_list{
     font-size: 0.83em;
     font-weight: 300;

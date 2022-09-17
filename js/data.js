@@ -22,9 +22,24 @@ let DATA = {
         { file: '20190823', date: '2019.08.23', nickname: '카벙클쿤' },
     ],
     SNS: [
-
+        { file: '20220909', date: '2022.09.09', nickname: 'Sin_Somsom' },
+        { file: '20220829', date: '2022.08.29', nickname: '2car_user' }
     ],
-    InGame: [
-
+    Atelier: [
+        { file: '20220826', date: '2022.08.26', nickname: '0808' },
+        { file: '20220823', date: '2022.08.23', nickname: '0429' },
+        { file: '20220814', date: '2022.08.14', nickname: '티_화방' },
+        { file: '20220726', date: '2022.07.26', nickname: '4029' },
+        { file: '20220614', date: '2022.06.14', nickname: '4029' },
+        { file: '20220418', date: '2022.04.18', nickname: '2022' },
+        { file: '20220411', date: '2022.04.11', nickname: '인게임 화방' },
+        { file: '20220409_2', date: '2022.04.09', nickname: '인게임 화방' },
+        { file: '20220409_1', date: '2022.04.09', nickname: '순두부 화방' },
+        { file: '20220326', date: '2022.03.26', nickname: '길거리 화방' },
+    ],
+    ETC: [
+        { file: '20220818', date: '2022.08.18', nickname: '너는@펜리르' },
+        { file: '20220531', date: '2022.05.31', nickname: '지상의\'별@펜리르' },
+        { file: '20220509', date: '2022.05.09', nickname: '용울@펜리르' },
     ]
 }
