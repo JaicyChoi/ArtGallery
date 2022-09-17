@@ -80,6 +80,30 @@ show_bg.addEventListener('click', () => {
     body.classList.remove('lock');
 });
 
-if( window.innerHeight < 860 ){
-    
+const sns = document.querySelector('.sns');
+const nickname_wrapper = document.querySelector('.nickname_wrapper');
+const menu = document.querySelector('.menu');
+
+if( window.innerHeight < 820 ){
+    sns.classList.add('max-height');
+    nickname_wrapper.classList.add('max-height');
+    menu.classList.add('max-height');
 }
+else{
+    sns.classList.remove('max-height');
+    nickname_wrapper.classList.remove('max-height');
+    menu.classList.remove('max-height');
+}
+
+window.addEventListener('resize', () => {
+    if( window.innerHeight < 820 ){
+        sns.classList.add('max-height');
+        nickname_wrapper.classList.add('max-height');
+        menu.classList.add('max-height');
+    }
+    else{
+        sns.classList.remove('max-height');
+        nickname_wrapper.classList.remove('max-height');
+        menu.classList.remove('max-height');
+    }
+});
