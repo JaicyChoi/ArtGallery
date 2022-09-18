@@ -383,7 +383,7 @@ svg{
     align-items: center;
     justify-content: center;
     transition: all .25s ease-in-out;
-    cursor: url(../img/sparkle.png) auto;
+    cursor: none;
 }
 .main_view_list>li>a:hover{
     background-color: rgba(255, 118, 124, .75);
