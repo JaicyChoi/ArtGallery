@@ -107,3 +107,12 @@ window.addEventListener('resize', () => {
         menu.classList.remove('max-height');
     }
 });
+
+const sns_list = document.querySelectorAll('.sns_list>li>a');
+
+sns_list.forEach( a => a.addEventListener('mouseenter', () => {
+    a.children[1].classList.add('hover');
+}));
+sns_list.forEach( a => a.addEventListener('mouseleave', () => {
+    a.children[1].classList.remove('hover');
+}));

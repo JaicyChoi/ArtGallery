@@ -134,10 +134,18 @@ body{
     margin-left: -5px;
     margin-right: 0;
 }
-.sns_list>li>a>img{
+.white, .color{
+    position: absolute;
     display: block;
     width: 100%;
     cursor: none;
+}
+.color{
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+.color.hover{
+    opacity: 1;
 }
 .nickname_wrapper{
     position: absolute;
@@ -357,7 +365,7 @@ svg{
     align-items: center;
     justify-content: center;
     transition: all .25s ease-in-out;
-    cursor: none;
+    cursor: url(../img/sparkle.png) auto;
 }
 .main_view_list>li>a:hover{
     background-color: rgba(255, 118, 124, .75);

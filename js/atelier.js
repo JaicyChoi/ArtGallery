@@ -79,3 +79,40 @@ show_bg.addEventListener('click', () => {
     show_bg.classList.remove('show');
     body.classList.remove('lock');
 });
+
+const sns = document.querySelector('.sns');
+const nickname_wrapper = document.querySelector('.nickname_wrapper');
+const menu = document.querySelector('.menu');
+
+if( window.innerHeight < 820 ){
+    sns.classList.add('max-height');
+    nickname_wrapper.classList.add('max-height');
+    menu.classList.add('max-height');
+}
+else{
+    sns.classList.remove('max-height');
+    nickname_wrapper.classList.remove('max-height');
+    menu.classList.remove('max-height');
+}
+
+window.addEventListener('resize', () => {
+    if( window.innerHeight < 820 ){
+        sns.classList.add('max-height');
+        nickname_wrapper.classList.add('max-height');
+        menu.classList.add('max-height');
+    }
+    else{
+        sns.classList.remove('max-height');
+        nickname_wrapper.classList.remove('max-height');
+        menu.classList.remove('max-height');
+    }
+});
+
+const sns_list = document.querySelectorAll('.sns_list>li>a');
+
+sns_list.forEach( a => a.addEventListener('mouseenter', () => {
+    a.children[1].classList.add('hover');
+}));
+sns_list.forEach( a => a.addEventListener('mouseleave', () => {
+    a.children[1].classList.remove('hover');
+}));

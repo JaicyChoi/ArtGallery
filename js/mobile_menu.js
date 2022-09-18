@@ -1,6 +1,6 @@
 const mobile_icon = document.querySelector('.mobile_icon');
 const mobile_arrow = document.querySelector('.mobile_arrow');
-const show_menu_bg = document.querySelector('.show_menu_bg')
+const show_menu_bg = document.querySelector('.show_menu_bg');
 
 mobile_icon.addEventListener('click', () => {
     menu.classList.add('show');
