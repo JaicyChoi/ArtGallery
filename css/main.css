@@ -113,6 +113,7 @@ body{
 }
 .sns.max-height{
     position: relative;
+    bottom: 50px;
     margin-top: 100px;
 }
 .sns_list{
@@ -157,7 +158,6 @@ body{
     float: left;
     text-align: right;
     width: 100%;
-    margin-top: -45px;
 }
 .nickname{
     position: relative;
