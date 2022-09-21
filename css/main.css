@@ -10,7 +10,7 @@ body{
     height: 100%;
     overflow: hidden;
     min-width: 360px;
-    cursor: none;
+    cursor: url(../img/sparkle.png), auto;
 }
 .menu{
     position: fixed;
@@ -94,7 +94,7 @@ body{
     color: white;
     padding: 2px;
     transition: all .2s ease-in-out;
-    cursor: none;
+    cursor: url(../img/sparkle.png), auto;
 }
 .menu_list>li>a:hover{
     color: #FF767C;
@@ -118,7 +118,7 @@ body{
     color: white;
     padding: 2px;
     transition: all .2s ease-in-out;
-    cursor: none;
+    cursor: url(../img/sparkle.png), auto;
 }
 .submenu_list>li>a:hover{
     color: #FF767C;
@@ -146,6 +146,9 @@ body{
     height: 28px;
     margin-right: 15px;
 }
+.sns_list>li>a{
+    cursor: url(../img/cursor_pointer.png), auto;
+}
 .sns_list>li:nth-child(3){
     margin-left: -10px;
 }
@@ -157,7 +160,6 @@ body{
     position: absolute;
     display: block;
     width: 100%;
-    cursor: none;
 }
 .color{
     opacity: 0;
@@ -383,7 +385,7 @@ svg{
     align-items: center;
     justify-content: center;
     transition: all .25s ease-in-out;
-    cursor: none;
+    cursor: url(../img/sparkle.png), auto;
 }
 .main_view_list>li>a:hover{
     background-color: rgba(255, 118, 124, .75);
