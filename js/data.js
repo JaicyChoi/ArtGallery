@@ -1,5 +1,6 @@
 let DATA = {
     INVEN: [
+        { file: '20221126', date: '2022.11.26', nickname: '이지혁' },
         { file: '20220907', date: '2022.09.07', nickname: '꼬꼬빵' },
         { file: '20220531', date: '2022.05.31', nickname: '김두유' },
         { file: '20220330', date: '2022.03.30', nickname: 'nong' },
@@ -15,7 +16,7 @@ let DATA = {
         { file: '20210617', date: '2021.06.17', nickname: '꼬마도도' },
         { file: '20210508', date: '2021.05.08', nickname: '꼬마도도' },
         { file: '20210506', date: '2021.05.06', nickname: '참신한닉' },
-        { file: '20210112', date: '2021.01.12', nickname: '투세' },
+        { file: '20210112', date: '2021.01.12', nickname: '이지혁' },
         { file: '20201009', date: '2020.10.09', nickname: '꼬마도도' },
         { file: '20200928_1', date: '2020.09.28', nickname: '꼬마도도' },
         { file: '20200928_2', date: '2020.09.28', nickname: '꼬마도도' },
