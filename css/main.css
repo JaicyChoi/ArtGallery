@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;300;400;500&display=swap');
+
+body{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-width: 360px;
+    cursor: url(../img/sparkle.png), auto;
+}
+.menu{
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 410px;
+    background-color: black;
+    z-index: 1;
+    box-shadow: 0px 0px 20px rgba(255, 118, 124, .15), 0px 0px 15px rgba(255, 118, 124, .3), 0px 0px 10px rgba(255, 118, 124, .35);
+    overflow-y: scroll;
+}
+.menu.max-height{
+    max-height: 800px;
+    overflow: auto;
+}
+.menu::-webkit-scrollbar{
+    width: 30px;
+    height: 100%;
+}
+.menu::-webkit-scrollbar-track{
+    background: black;
+}
+.menu::-webkit-scrollbar-thumb{
+    background: #ff767c;
+    background-clip: padding-box;
+    border: 13px solid transparent;
+}
+.menu::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 255, 255, .75);
+    border-radius: 10px;
+    background-clip: padding-box;
+}
+.menu_inner{
+    padding-left: 30px;
+}
+.profile_wrapper{
+    position: relative;
+    margin-top: 110px;
+}
+.profile_img_wrapper{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile_img_wrapper img{
+    position: relative;
+    left: -13px;
+    top: 23px;
+    width: 110%;
+    display: block;
+}
+.profile_name{
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Nothing You Could Do', cursive;
+    color: #FF767C;
+    font-size: 1.5em;
+}
+.menu_list_wrapper{
+    position: relative;
+    margin-top: 90px;
+}
+.menu_list{
+    position: relative;
+    margin-left: 120px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+}
+.menu_list>li{
+    position: reltavie;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-indent: -2px;
+}
+.menu_list>li>a{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    transition: all .2s ease-in-out;
+    cursor: url(../img/sparkle.png), auto;
+}
+.menu_list>li>a:hover{
+    color: #FF767C;
+}
+.menu_list>li>a.menu_selected{
+    color: #FF767C;
+}
+.submenu_list>li>a.menu_selected{
+    color: #FF767C;
+}
+.submenu_list{
+    font-size: 0.83em;
+    font-weight: 300;
+}
+.submenu_list>li{
+    margin-top: 15px;
+    text-indent: 15px;
+}
+.submenu_list>li>a{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    transition: all .2s ease-in-out;
+    cursor: url(../img/sparkle.png), auto;
+}
+.submenu_list>li>a:hover{
+    color: #FF767C;
+}
+.sns{
+    position: absolute;
+    float: left;
+    width: 100%;
+    bottom: 75px;
+}
+.sns.max-height{
+    position: relative;
+    bottom: 50px;
+    margin-top: 100px;
+}
+.sns_list{
+    position: relative;
+    float: left;
+    margin-left: 120px;
+}
+.sns_list>li{
+    position: relative;
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+}
+.sns_list>li>a{
+    cursor: url(../img/cursor_pointer.png), auto;
+}
+.sns_list>li:nth-child(3){
+    margin-left: -10px;
+}
+.sns_list>li:nth-child(4){
+    margin-left: -5px;
+    margin-right: 0;
+}
+.white, .color{
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+.color{
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+.color.hover{
+    opacity: 1;
+}
+.nickname_wrapper{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+.nickname_wrapper.max-height{
+    position: relative;
+    float: left;
+    text-align: right;
+    width: 100%;
+}
+.nickname{
+    position: relative;
+    color: white;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 0.75em;
+}
+.mobile_menu_wrap{
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    display: none;
+}
+.mobile_icon{
+    width: 35px;
+    height: 35px;
+/*     cursor: pointer; */
+}
+.mobile_icon.hide{
+    display: none;
+}
+.mobile_icon:after{
+    content: '';
+    background: rgba(255, 118, 124, .5);
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: -9px;
+    left: -9px;
+    z-index: -1;
+    border-radius: 50%;
+    transition: all .3s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .35), 0 0 5px rgba(255, 2558, 255, .5);
+}
+.mobile_icon:hover:after{
+    background: rgba(255, 255, 255, .75);
+    box-shadow: 0 0 15px rgba(255, 118, 124, .5), 0 0 10px rgba(255, 118, 124, .35), 0 0 5px rgba(255, 118, 124, .5);
+}
+.mobile_icon img{
+    width: 100%;
+    display: block;
+}
+.mobile_arrow{
+    position: absolute;
+    top: -8px;
+    left: -9px;
+    width: 50px;
+    height: 50px;
+/*     cursor: pointer; */
+    display: none;
+}
+.mobile_arrow.show{
+    display: block;
+}
+.mobile_arrow:after{
+    content: '';
+    background: rgba(255, 118, 124, .5);
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: -2px;
+    left: 0px;
+    z-index: -1;
+    border-radius: 50%;
+    transition: all .3s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .35), 0 0 5px rgba(255, 2558, 255, .5);
+}
+.mobile_arrow:hover:after{
+    background: rgba(255, 255, 255, .75);
+    box-shadow: 0 0 15px rgba(255, 118, 124, .5), 0 0 10px rgba(255, 118, 124, .35), 0 0 5px rgba(255, 118, 124, .5);
+}
+.mobile_arrow img{
+    width: 100%;
+    display: block;
+}
+.main_view{
+    position: relative;
+    float: right;
+    width: calc(100% - 410px);
+    height: 100vh;
+    background: url(../img/welcome.png) center;
+    background-size: cover;
+    transition: all .3s ease-in-out;
+}
+.main_view.inven{
+    background: url(../img/inven/20220330.jpg) no-repeat center;
+    background-size: cover;
+}
+.main_view.sns_view{
+    background: url(../img/sns/20220909.png) center;
+    background-size: cover;
+    height: 100vh;
+}
+.main_view.in-game{
+    background: url(../img/atelier/20220726.png) no-repeat center;
+    background-size: cover;
+}
+.main_view.partner{
+    background: url(../img/partner.png) no-repeat center;
+    background-size: cover;
+}
+.main_view:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: brightness(50%);
+}
+.main_view:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(3px);
+}
+.intro_wrpper{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 30px);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.intro{
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+svg{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 130%;
+    max-width: 745px;
+    margin-bottom: 25px;
+}
+.welcome{
+    /* font-family: 'Major Mono Display', monospace;
+    font-size: 7.5em;
+    color: white; */
+    fill: none;
+    stroke: white;
+    stroke-width: 1.25;
+    stroke-dasharray: 2000, 2000;
+    animation: welcome_animation 4s both;
+    transition: all 3.5s ease-in-out;
+}
+.welcome.fill{
+    animation: fill_welcome 3s forwards;
+}
+.intro_message{
+    font-family: 'Alegreya Sans', sans-serif;
+    color: white;
+    font-size: 1.125em;
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: all 1.5s linear;
+}
+.intro_message.show{
+    transform: translateY(0);
+    opacity: 1;
+}
+.main_view_list{
+    position: relative;
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    visibility: hidden;
+}
+.main_view_list.show{
+    visibility: visible;
+}
+.main_view_list>li{
+    width: 170px;
+    height: 45px;
+    box-sizing: border-box;
+    transition: all 1.5s ease-in-out;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+.main_view_list>li.show{
+    transform: translateY(0);
+    opacity: 1;
+}
+.main_view_list>li>a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.25em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    transition: all .25s ease-in-out;
+    cursor: url(../img/sparkle.png), auto;
+}
+.main_view_list>li>a:hover{
+    background-color: rgba(255, 118, 124, .75);
+    border: 1px solid rgba(255, 118, 124, .75)
+}

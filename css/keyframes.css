@@ -1,0 +1,16 @@
+@keyframes welcome_animation{
+	from{
+        stroke-dashoffset: -2000;
+    }
+	to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill_welcome{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: white;
+    }
+}
