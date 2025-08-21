@@ -30,6 +30,7 @@ let DATA = {
         { file: '20220829', date: '2022.08.29', nickname: '2car_user' }
     ],
     Atelier: [
+        { file: '20250817', date: '2025.08.17', nickname: '무료화방' },
         { file: '20230602', date: '2023.06.02', nickname: '아싸화방' },
         { file: '20230201', date: '2023.02.01', nickname: '#외출속_무료화방' },
         { file: '20220922', date: '2022.09.22', nickname: '0429' },
